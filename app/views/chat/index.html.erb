@@ -1,0 +1,27 @@
+<br>
+Hi <span id="name"><%= @user.name%></span>!
+
+<br><br>
+<b>Debug Details: </b> <br>
+Id: <%= @user.id %> <br>
+Latitude: <span id="lat"></span> <br>
+Longitude: <span id="lng"></span> <br>
+Ping details: <span id="ping_message"></span><br><br>
+<div class="row">
+  <div class="col-md-12">
+    <form action="">
+      <div class="form-group">
+        <label for="message">Message</label>
+        <input type="text" class="form-control" id="message" placeholder="Enter message" autocomplete="off">
+      </div>
+    </form>
+    <a href="#" id="send" class="btn btn-primary disabled">Connecting</a>
+  </div>
+</div>
+
+<ul id="chat_messsages"></ul>
+
+<div id="map-canvas"></div>
+
+<input type="hidden" id="user_id" value="<%= @user.id %>">
+<input type="hidden" id="user_name" value="<%= @user.name %>">

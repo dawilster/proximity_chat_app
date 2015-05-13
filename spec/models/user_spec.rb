@@ -6,6 +6,11 @@ RSpec.describe User, type: :model do
     expect(user).to be_valid
   end
 
+  it "sets lat and lng" do
+    user = create(:user, lat: 10, lng: 10)
+    expect(user.coordinates).to be_present
+  end
+
   describe "near location" do
     it "returns nearest user to a location" do
       user = create(:user, lat: -37.809075, lng: 139.964770)

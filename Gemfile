@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'activerecord-postgis-adapter'
+gem 'active_model_serializers', '~> 0.8'
 
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
