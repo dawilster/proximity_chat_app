@@ -1,0 +1,8 @@
+development:
+    postgresql:
+        configuration:
+            postgis: true
+production:
+    postgresql:
+        configuration:
+            postgis: true
